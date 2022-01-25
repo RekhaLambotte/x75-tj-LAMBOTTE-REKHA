@@ -10,6 +10,7 @@ import {InfoRoutingModule} from "./info-routing.module";
   imports: [
     CommonModule,
     InfoRoutingModule
+
   ]
 })
 export class InfoModule { }
