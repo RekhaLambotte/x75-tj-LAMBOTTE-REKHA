@@ -9,7 +9,11 @@ const routes: Routes = [
     component: InfoPageComponent
   },
   {
-    path: '/contact',
+    path: 'info',
+    component: InfoPageComponent
+  },
+  {
+    path: 'contact',
     component: ContactPageComponent
   }
 ];
