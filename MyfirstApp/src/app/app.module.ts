@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MyIdentityComponent } from './component/my-identity/my-identity.component';
-import { MyDescriptionComponent } from './component/my-description/my-description.component';
-import { InfoPageComponent } from './component/info-page/info-page.component';
 import { ContactPageComponent } from './component/contact-page/contact-page.component';
+import {MyIdentityComponent} from "./info-module/component/my-identity/my-identity.component";
+import {MyDescriptionComponent} from "./info-module/component/my-description/my-description.component";
+import {InfoPageComponent} from "./info-module/component/info-page/info-page.component";
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { ContactPageComponent } from './component/contact-page/contact-page.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
