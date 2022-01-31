@@ -6,11 +6,14 @@ import {MyDescriptionComponent} from "./component/my-description/my-description.
 import {InfoRoutingModule} from "./info-routing.module";
 
 @NgModule({
-  declarations: [ InfoPageComponent, MyIdentityComponent, MyDescriptionComponent],
+  declarations: [
+    InfoPageComponent,
+    MyIdentityComponent,
+    MyDescriptionComponent],
+
   imports: [
     CommonModule,
-    InfoRoutingModule
-
+    InfoRoutingModule,
   ]
 })
 export class InfoModule { }
