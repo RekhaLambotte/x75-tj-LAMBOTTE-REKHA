@@ -7,12 +7,14 @@ import { ContactPageComponent } from './component/contact-page/contact-page.comp
 import { WelcomePageComponent } from './component/welcome-page/welcome-page.component';
 import {DashboardModule} from "./dashboard/dashboard.module";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PersonDetailComponent } from './component/person-detail/person-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactPageComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    PersonDetailComponent
   ],
   imports: [
     BrowserModule,

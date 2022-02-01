@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {ContactPageComponent} from "./component/contact-page/contact-page.component";
 import {WelcomePageComponent} from "./component/welcome-page/welcome-page.component";
 import {SignedGuard} from "./guard/signed.guard";
+import {PersonDetailComponent} from "./component/person-detail/person-detail.component";
 
 const routes: Routes = [
   { path:'', redirectTo: 'home', pathMatch: 'full' },
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path:'contact', component: ContactPageComponent },
   { path: 'info', canActivate:[SignedGuard], loadChildren: () => import('./info/info.module').then(m=>m.InfoModule)},
   { path: 'dashboard', canActivate:[SignedGuard], loadChildren: () => import('./dashboard/dashboard.module').then(m=>m.DashboardModule)},
+  { path: 'person-detail/:id', component: PersonDetailComponent},
   { path: '**', component: WelcomePageComponent }
 ];
 
